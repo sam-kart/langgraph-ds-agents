@@ -1,0 +1,32 @@
+[
+  {
+    "id": "wine_regression",
+    "name": "UCI Wine Quality Regression",
+    "prompt": "Download the red wine quality CSV from https://archive.ics.uci.edu/ml/machine-learning-databases/wine-quality/winequality-red.csv (semicolon separator). Clean it, engineer features, run EDA and train a baseline Random Forest regressor to predict wine quality, then have the scientist try to beat it. Review and report.",
+    "required_artifacts": ["clean_data.csv", "engineered_data.csv"],
+    "required_report": true,
+    "required_dashboard": true,
+    "required_agents": ["manager", "engineer", "feature_engineer", "analyst", "scientist", "reviewer", "reporter", "dashboarder"],
+    "max_runtime_error_rate": 0.4
+  },
+  {
+    "id": "synthetic_churn",
+    "name": "Synthetic Churn Classification",
+    "prompt": "Generate a synthetic customer churn dataset, clean it, engineer useful features, train a classifier, have the scientist improve the model, review the methodology, and write a report.",
+    "required_artifacts": ["clean_data.csv", "engineered_data.csv"],
+    "required_report": true,
+    "required_dashboard": true,
+    "required_agents": ["manager", "engineer", "feature_engineer", "analyst", "scientist", "reviewer", "reporter", "dashboarder"],
+    "max_runtime_error_rate": 0.4
+  },
+  {
+    "id": "dirty_data_cleaning",
+    "name": "Dirty Data Cleaning Stress Test",
+    "prompt": "Generate a small dirty tabular dataset with missing values, duplicate rows, bad numeric types, categorical noise, and a binary target. Clean it, engineer features, train a simple baseline model, review the methodology, and report.",
+    "required_artifacts": ["clean_data.csv", "engineered_data.csv"],
+    "required_report": true,
+    "required_dashboard": true,
+    "required_agents": ["manager", "engineer", "feature_engineer", "analyst", "reviewer", "reporter", "dashboarder"],
+    "max_runtime_error_rate": 0.4
+  }
+]

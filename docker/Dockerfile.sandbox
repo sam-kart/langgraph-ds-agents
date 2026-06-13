@@ -1,0 +1,17 @@
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 \
+    PYTHONUNBUFFERED=1 \
+    MPLCONFIGDIR=/tmp/matplotlib
+
+RUN groupadd --gid 10001 runner \
+    && useradd --uid 10001 --gid runner --create-home runner
+
+COPY docker/sandbox-requirements.txt /tmp/requirements.txt
+RUN pip install --no-cache-dir -r /tmp/requirements.txt \
+    && rm /tmp/requirements.txt
+
+USER runner
+WORKDIR /workspace
+
+ENTRYPOINT ["python", "-"]

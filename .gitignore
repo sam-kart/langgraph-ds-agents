@@ -1,0 +1,12 @@
+.env
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# Generated run artifacts can be large and are reproducible.
+outputs/
+evals/results/
+
+# Local editor state.
+.vscode/
