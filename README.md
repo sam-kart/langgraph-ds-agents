@@ -1,4 +1,4 @@
-# The Pog — Multi-Agent Data Science System
+# Multi-Agent Data Science System
 
 LangGraph-powered multi-agent system for solving data science problems from a natural language prompt. The system coordinates specialized AI agents for data acquisition, feature engineering, EDA/modeling, model improvement, methodology review, and final reporting.
 
